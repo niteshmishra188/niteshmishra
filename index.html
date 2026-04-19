@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backend Developer Portfolio | PHP & Laravel Specialist</title>
+    <meta name="description" content="Professional portfolio of a backend web developer specializing in PHP, Laravel, and scalable web solutions." />
+    <meta name="author" content="Your Name" />
+
+    <meta property="og:title" content="Backend Developer Portfolio | PHP & Laravel Specialist" />
+    <meta property="og:description" content="Professional portfolio of a backend web developer specializing in PHP, Laravel, and scalable web solutions." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- Header/Navigation -->
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <a href="#home" class="logo">
+              <span class="text-primary">&lt;</span>
+              Nitesh
+              <span class="text-primary">/&gt;</span>
+            </a>
+            
+            <nav class="navbar">
+              <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="menu-icon"></span>
+              </button>
+              
+              <div class="nav-menu">
+                <button class="nav-item" data-section="home">Home</button>
+                <button class="nav-item" data-section="about">About</button>
+                <button class="nav-item" data-section="skills">Skills</button>
+                <button class="nav-item" data-section="services">Services</button>
+                <button class="nav-item" data-section="portfolio">Portfolio</button>
+                <button class="nav-item" data-section="contact">Contact</button>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="bg-elements">
+          <!-- Animated Cubes Background -->
+          <div class="cubes-container">
+            <div class="cube cube-1"></div>
+            <div class="cube cube-2"></div>
+            <div class="cube cube-3"></div>
+            <div class="cube cube-4"></div>
+            <div class="cube cube-5"></div>
+            <div class="cube cube-6"></div>
+            <div class="cube cube-7"></div>
+            <div class="cube cube-8"></div>
+          </div>
+        </div>
+        
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title fade-up" data-delay="0.4s">Hello, I'm Nitesh</h1>
+            <p class="hero-description fade-up" data-delay="0.6s">
+              I build clean, scalable, and efficient backend solutions 
+              that power modern web applications.
+            </p>
+            <div class="hero-buttons fade-up" data-delay="0.8s">
+              <button class="btn btn-primary" data-section="portfolio">
+                View My Work
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+              <button class="btn btn-outline" data-section="contact">
+                Get in Touch
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>About Me</h2>
+          </div>
+          
+          <div class="about-content">
+            <div class="about-info">
+              <h3>Backend Developer & PHP Specialist</h3>
+              
+              <div class="about-description">
+                <p>
+                  I am a dedicated backend developer with expertise in PHP, Laravel, and building scalable web applications. 
+                  Currently working at Jatayu Technology, I focus on creating efficient backend solutions that meet modern development standards.
+                </p>
+                <p>
+                  With a strong foundation in database design, API development, and system architecture, 
+                  I strive to deliver clean, maintainable code that solves complex business problems.
+                </p>
+                <p>
+                  My approach to development is centered around creating efficient, secure, and scalable backend systems 
+                  that provide a solid foundation for outstanding user experiences.
+                </p>
+              </div>
+              
+              <div class="about-action">
+                <a href="#" class="btn btn-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  Download CV
+                </a>
+              </div>
+            </div>
+            
+            <div class="profile-card">
+              <div class="profile-photo">
+                <img src="https://i.postimg.cc/hvz01gX9/1746033598320.jpg" 
+                     alt="Profile Photo" 
+                     class="profile-image"
+                     loading="lazy">
+                <div class="profile-info">
+                    <h4>Nitesh</h4>
+                    <p>Backend Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <div class="section-title">
+            <h2>My Skills</h2>
+            <p class="section-subtitle">Technologies and abilities I've developed over the years</p>
+          </div>
+          
+          <div class="skills-content">
+            <!-- Technical Skills -->
+            <div class="skills-card">
+              <h3 class="text-primary">Technical Skills</h3>
+              
+              <div class="technical-skills">
+                <div class="skill">
+                  <div class="skill-header">
+                    <span>PHP</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%" data-delay="0.2s"></div>
+                  </div>
+                </div>
+                
+                <div class="skill">
+                  <div class="skill-header">
+                    <span>Laravel</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%" data-delay="0.3s"></div>
+                  </div>
+                </div>
+                
+                <div class="skill">
+                  <div class="skill-header">
+                    <span>MySQL</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%" data-delay="0.4s"></div>
+                  </div>
+                </div>
+                
+                <div class="skill">
+                  <div class="skill-header">
+                    <span>Git/GitHub</span>
+                    <span>75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%" data-delay="0.5s"></div>
+                  </div>
+                </div>
+                
+                <div class="skill">
+                  <div class="skill-header">
+                    <span>REST APIs</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%" data-delay="0.6s"></div>
+                  </div>
+                </div>
+                
+                <div class="skill">
+                  <div class="skill-header">
+                    <span>HTML/CSS</span>
+                    <span>70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%" data-delay="0.7s"></div>
+                  </div>
+                </div>
+                
+                <div class="skill">
+                  <div class="skill-header">
+                    <span>JavaScript</span>
+                    <span>65%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 65%" data-delay="0.8s"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Professional Skills -->
+            <div class="skills-card">
+              <h3 class="text-primary">Professional Skills</h3>
+              
+              <div class="professional-skills">
+                <div class="pro-skill fade-in" data-delay="0.2s">
+                  <div class="skill-dot"></div>
+                  <span>Problem Solving</span>
+                </div>
+                
+                <div class="pro-skill fade-in" data-delay="0.3s">
+                  <div class="skill-dot"></div>
+                  <span>Clean Code</span>
+                </div>
+                
+                <div class="pro-skill fade-in" data-delay="0.4s">
+                  <div class="skill-dot"></div>
+                  <span>Technical Documentation</span>
+                </div>
+                
+                <div class="pro-skill fade-in" data-delay="0.5s">
+                  <div class="skill-dot"></div>
+                  <span>Team Collaboration</span>
+                </div>
+                
+                <div class="pro-skill fade-in" data-delay="0.6s">
+                  <div class="skill-dot"></div>
+                  <span>Project Management</span>
+                </div>
+                
+                <div class="pro-skill fade-in" data-delay="0.7s">
+                  <div class="skill-dot"></div>
+                  <span>Continuous Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title">
+            <h2>My Services</h2>
+            <p class="section-subtitle">Specialized web development services I offer</p>
+          </div>
+          
+          <div class="services-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Backend Development</h3>
+              <p>Custom backend solutions using PHP, Laravel, and other modern technologies to create robust web applications.</p>
+              <ul class="service-list">
+                <li>API Development</li>
+                <li>Authentication Systems</li>
+                <li>Payment Gateway Integration</li>
+              </ul>
+              <a href="#contact" class="service-link">
+                Learn More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3>Database Design</h3>
+              <p>Efficient and scalable database architectures that ensure optimal performance and data integrity.</p>
+              <ul class="service-list">
+                <li>Schema Design</li>
+                <li>Query Optimization</li>
+                <li>Data Migration</li>
+              </ul>
+              <a href="#contact" class="service-link">
+                Learn More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              </div>
+              <h3>API Development</h3>
+              <p>RESTful API design and implementation that connects your applications and services seamlessly.</p>
+              <ul class="service-list">
+                <li>REST API Design</li>
+                <li>API Documentation</li>
+                <li>Third-party API Integration</li>
+              </ul>
+              <a href="#contact" class="service-link">
+                Learn More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              </div>
+              <h3>System Optimization</h3>
+              <p>Performance tuning and code optimization to ensure your applications run efficiently at scale.</p>
+              <ul class="service-list">
+                <li>Performance Tuning</li>
+                <li>Code Refactoring</li>
+                <li>Security Hardening</li>
+              </ul>
+              <a href="#contact" class="service-link">
+                Learn More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3>Security & Authentication</h3>
+              <p>Implementing robust security measures and authentication systems to protect your applications.</p>
+              <ul class="service-list">
+                <li>OAuth Implementation</li>
+                <li>JWT Authentication</li>
+                <li>Security Best Practices</li>
+              </ul>
+              <a href="#contact" class="service-link">
+                Learn More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <h3>DevOps & Deployment</h3>
+              <p>Setting up efficient deployment pipelines and DevOps practices for continuous integration and delivery.</p>
+              <ul class="service-list">
+                <li>CI/CD Pipeline Setup</li>
+                <li>Docker Containerization</li>
+                <li>Server Configuration</li>
+              </ul>
+              <a href="#contact" class="service-link">
+                Learn More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="section-title">
+            <h2>My Portfolio</h2>
+            <p class="section-subtitle">A showcase of my backend development projects</p>
+          </div>
+          
+          <div class="portfolio-content">
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-icon-container">
+                        <div class="portfolio-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                        </div>
+                    </div>
+                    <h3>E-Commerce Platform</h3>
+                    <p class="portfolio-description">
+                        A full-featured e-commerce platform built with Laravel, featuring real-time inventory management, 
+                        payment gateway integration, and advanced analytics dashboard.
+                    </p>
+                    <div class="portfolio-tech">
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>Vue.js</span>
+                        <span>Stripe API</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-icon-container">
+                        <div class="portfolio-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                        </div>
+                    </div>
+                    <h3>Task Management System</h3>
+                    <p class="portfolio-description">
+                        A comprehensive task management system with real-time updates, team collaboration features, 
+                        and automated workflow processes.
+                    </p>
+                    <div class="portfolio-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>WebSocket</span>
+                        <span>Redis</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-icon-container">
+                        <div class="portfolio-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                    </div>
+                    <h3>Social Media Dashboard</h3>
+                    <p class="portfolio-description">
+                        A social media management dashboard that integrates multiple platforms, 
+                        provides analytics, and automates content scheduling.
+                    </p>
+                    <div class="portfolio-tech">
+                        <span>Laravel</span>
+                        <span>React</span>
+                        <span>GraphQL</span>
+                        <span>AWS</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-icon-container">
+                        <div class="portfolio-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                    </div>
+                    <h3>Content Management System</h3>
+                    <p class="portfolio-description">
+                        A custom CMS with advanced content editing capabilities, 
+                        media management, and multi-language support.
+                    </p>
+                    <div class="portfolio-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>jQuery</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-icon-container">
+                        <div class="portfolio-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                    </div>
+                    <h3>Real-time Chat Application</h3>
+                    <p class="portfolio-description">
+                        A scalable real-time chat application with features like message encryption, 
+                        file sharing, and group chat functionality.
+                    </p>
+                    <div class="portfolio-tech">
+                        <span>Laravel</span>
+                        <span>WebSocket</span>
+                        <span>Redis</span>
+                        <span>Vue.js</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-card">
+                    <div class="portfolio-icon-container">
+                        <div class="portfolio-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+                        </div>
+                    </div>
+                    <h3>Payment Gateway Integration</h3>
+                    <p class="portfolio-description">
+                        A comprehensive payment processing system integrating multiple payment gateways, 
+                        with support for subscriptions and automated billing.
+                    </p>
+                    <div class="portfolio-tech">
+                        <span>PHP</span>
+                        <span>Stripe API</span>
+                        <span>PayPal SDK</span>
+                        <span>MySQL</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle">Let's discuss your project or job opportunity</p>
+          </div>
+          
+          <div class="contact-content">
+            <!-- Contact Form -->
+            <div class="contact-form-card">
+              <h3>Send Me A Message</h3>
+              
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                </div>
+                
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="5" required placeholder="Hello, I'm interested in working with you on..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+              </form>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="contact-info">
+              <div>
+                <h3>Contact Information</h3>
+                <p class="contact-description">
+                  Feel free to reach out through any of these channels. I'm always open to discussing
+                  new projects, job opportunities, or partnerships.
+                </p>
+              </div>
+              
+              <div class="contact-details">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="contact-item-details">
+                    <h4>Email</h4>
+                    <a href="mailto:contact@yourname.com">mishranitesh188@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="contact-item-details">
+                    <h4>Phone</h4>
+                    <a href="tel:+1234567890">+91 9525172695</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  </div>
+                  <div class="contact-item-details">
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/niteshmishra188" target="_blank" rel="noopener noreferrer">github.com/niteshmishra188</a>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                  </div>
+                  <div class="contact-item-details">
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/nitesh-mishra-b7a345285" target="_blank" rel="noopener noreferrer">linkedin.com/in/nitesh-mishra-b7a345285</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="availability-card">
+                <h4>Available for Freelance</h4>
+                <p>
+                  I'm currently accepting new projects and freelance opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-logo">
+              <a href="#home" class="logo">
+                <span class="text-primary">&lt;</span>
+               Nitesh
+                <span class="text-primary">/&gt;</span>
+              </a>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://github.com/niteshmishra188" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/nitesh-mishra-b7a345285" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="mailto:mishranitesh188@gmail.com" class="social-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+            
+            <div class="copyright">
+              <p>
+                &copy; <span id="currentYear"></span> Nitesh. All Rights Reserved.
+              </p>
+              <p>
+                PHP Developer specializing in Laravel & Web Development
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Toast notification -->
+      <div id="toast" class="toast">
+        <div class="toast-content">
+          <div class="toast-message">Message sent successfully!</div>
+          <div class="toast-description">I will get back to you as soon as possible.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
