@@ -364,3 +364,13 @@ scrollButtons.forEach(button => {
 
 // Initial scroll check
 handleScroll();
+//  Google tag (gtag.js)
+document.querySelectorAll('.track-btn').forEach(btn => {
+  btn.addEventListener('click', function () {
+    gtag('event', 'click', {
+      event_category: 'Outbound Link',
+      event_label: this.dataset.label,
+      value: 1
+    });
+  });
+});
