@@ -365,20 +365,13 @@ scrollButtons.forEach(button => {
 // Initial scroll check
 handleScroll();
 //  Google tag (gtag.js)
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
   document.querySelectorAll('.track-btn').forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      const url = this.href;
-
-      gtag('event', 'button_click', {
+    btn.addEventListener('click', function () {
+      gtag('event', 'click', {
         event_category: 'Outbound Link',
         event_label: this.dataset.label,
-        transport_type: 'beacon',
-        event_callback: function () {
-          window.location.href = url;
-        }
+        value: 1
       });
     });
   });
