@@ -368,48 +368,49 @@ handleScroll();
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.track-btn').forEach(el => {
     el.addEventListener('click', function (e) {
-
       const label = this.dataset.label;
       const section = this.dataset.section;
       const url = this.getAttribute('href');
 
-      // 🔹 Track event in GA4
-      gtag('event', 'interaction_click', {
-        event_category: section ? 'Navigation' : 'Social Link',
-        event_label: label,
-        section_name: section || null,
-        link_url: url || null,
-        transport_type: 'beacon'
-      });
+      // Safety check — gtag may not load on slow connections
+      if (typeof gtag === 'function') {
+        gtag('event', 'interaction_click', {
+          event_category: section ? 'Navigation' : 'Social Link',
+          event_label: label,
+          section_name: section || null,
+          link_url: url || null,
+          // ✅ Correct way to use transport + callback
+          transport_type: 'beacon',
+          event_callback: function () {
+            if (url && !url.startsWith('mailto:') && !section) {
+              window.open(url, '_blank');
+            }
+          }
+        });
+      }
 
-      // 🔹 Case 1: Navigation buttons (no href)
+      // Case 1: Navigation scroll buttons
       if (section) {
         const target = document.getElementById(section);
         if (target) {
           target.scrollIntoView({ behavior: 'smooth' });
         }
-        return; // stop here
+        return;
       }
 
-      // 🔹 Case 2: Social links (has href)
+      // Case 2: External links
       if (url) {
         e.preventDefault();
 
-        // handle mailto separately (no need delay)
         if (url.startsWith('mailto:')) {
           window.location.href = url;
           return;
         }
 
-        // delay redirect for tracking
-        gtag('event_callback', function () {
-          window.open(url, '_blank');
-        });
-
-        // fallback (if callback fails)
+        // Fallback in case event_callback doesn't fire
         setTimeout(() => {
           window.open(url, '_blank');
-        }, 500);
+        }, 300);
       }
     });
   });
