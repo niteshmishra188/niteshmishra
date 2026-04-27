@@ -365,14 +365,52 @@ scrollButtons.forEach(button => {
 // Initial scroll check
 handleScroll();
 //  Google tag (gtag.js)
-window.addEventListener('load', function () {
-  document.querySelectorAll('.track-btn').forEach(btn => {
-    btn.addEventListener('click', function () {
-      gtag('event', 'click', {
-        event_category: 'Outbound Link',
-        event_label: this.dataset.label,
-        value: 1
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.track-btn').forEach(el => {
+    el.addEventListener('click', function (e) {
+
+      const label = this.dataset.label;
+      const section = this.dataset.section;
+      const url = this.getAttribute('href');
+
+      // 🔹 Track event in GA4
+      gtag('event', 'interaction_click', {
+        event_category: section ? 'Navigation' : 'Social Link',
+        event_label: label,
+        section_name: section || null,
+        link_url: url || null,
+        transport_type: 'beacon'
       });
+
+      // 🔹 Case 1: Navigation buttons (no href)
+      if (section) {
+        const target = document.getElementById(section);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+        return; // stop here
+      }
+
+      // 🔹 Case 2: Social links (has href)
+      if (url) {
+        e.preventDefault();
+
+        // handle mailto separately (no need delay)
+        if (url.startsWith('mailto:')) {
+          window.location.href = url;
+          return;
+        }
+
+        // delay redirect for tracking
+        gtag('event_callback', function () {
+          window.open(url, '_blank');
+        });
+
+        // fallback (if callback fails)
+        setTimeout(() => {
+          window.open(url, '_blank');
+        }, 500);
+      }
     });
   });
 });
